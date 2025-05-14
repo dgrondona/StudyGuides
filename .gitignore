@@ -1,0 +1,29 @@
+# LaTeX intermediate and output files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.nav
+*.snm
+*.vrb
+
+# Editor swap/backup files
+*~
+*.swp
+*.bak
+*.backup
+*.tmp
+
+# VS Code
+.vscode/

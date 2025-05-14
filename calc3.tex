@@ -1,0 +1,182 @@
+% document setup
+\documentclass[10pt]{article}                               % 10pt font size
+\usepackage[margin=1in]{geometry}                           % set the margin to 1 inch
+\usepackage{mathpazo}                                       % use the font Palatino
+
+\renewcommand{\familydefault}{\sfdefault}                   % set our font to default
+
+% other packages
+\usepackage{amsmath, amssymb}
+\usepackage{changepage}
+\usepackage[most]{tcolorbox}
+
+% define colors
+\definecolor{darkgreen}{RGB}{0,100,0}
+
+\begin{document}
+
+% Title: Calculus 3 Study Guide
+\begin{center}
+    {\Huge \textbf{Calculus 3 Study Guide}} \\
+    \vspace{0.5em}
+\end{center}
+
+\vspace{1em}
+
+
+% Section 1 | Coordinate Systems
+\begin{tcolorbox}[breakable,
+    enhanced,
+    colback=white,
+    colframe=black,
+    boxrule=0.5pt,
+    arc=2mm,
+    left=1em,
+    right=1em,
+    top=1em,
+    bottom=1em,
+    overlay first={\draw[line width=.5pt] (frame.south west)--(frame.south east);},
+    overlay middle={\draw[line width=.5pt] (frame.south west)--(frame.south east);\draw[line width=.5pt] (frame.north west)--(frame.north east);},
+    overlay last={\draw[line width=.5pt] (frame.north west)--(frame.north east);}
+    ]
+
+    % Section Title: Coordinate Systems
+    \section*{Coordinate Systems}
+
+
+    \begin{adjustwidth}{2em}{0pt}
+
+        % Subsection Title: Polar Coordinates
+        \subsection*{Polar Coordinates}
+
+        \begin{adjustwidth}{2em}{0pt}
+
+            \begin{tcolorbox}[enhanced, colback=white, colframe=black, boxrule=0.5pt]
+
+                \textbf{Note:} \\
+                Polar coordinates describe a point in 2D space using two values:
+
+                \begin{itemize}
+                    \item \( r \): the distance from the origin
+                    \item \( \theta \): the angle from the positive x-axis
+                \end{itemize}
+
+                This system is ideal for problems with circular or rotational symmetry, such as spirals or radial fields.
+
+            \end{tcolorbox}
+
+
+            \vspace{0.5em}
+
+            % Conversions
+            \textbf{Polar to Cartesian}
+
+            \begin{itemize}
+                \item \( x = r\cos\theta \)
+                \item \( y = r\sin\theta \)
+            \end{itemize}
+
+            \vspace{0.5em}
+
+            \textbf{Cartesian to Polar}
+
+            \begin{itemize}
+                \item \( r = \sqrt{x^2 + y^2} \)
+                \item \( \tan\theta = \frac{x}{y}  \rightarrow  \theta = \tan^{-1}\left(\frac{x}{y}\right) \)
+            \end{itemize}
+
+        \end{adjustwidth}
+
+
+        % Subsection Title: Cylindrical Coordinates
+        \subsection*{Cylindrical Coordinates}
+
+        \begin{adjustwidth}{2em}{0pt}
+
+            \begin{tcolorbox}[enhanced, colback=white, colframe=black, boxrule=0.5pt]
+
+                \textbf{Note:} \\
+                Polar coordinates describe a point in 3D space using three values:
+
+                \begin{itemize}
+                    \item \( r \): The distance from the origin in the xy-plane
+                    \item \( \theta \): The angle from the positive x-axis in the xy-plane (same as polar coordiantes)
+                    \item \( z \): The height above (or below) the xy-plane
+                \end{itemize}
+
+                This system is useful for objects with circular symmetry around the z-axis, like cylinders and spirals.
+
+            \end{tcolorbox}
+
+            \vspace{0.5em}
+
+            % Conversions
+            \textbf{Cylindrical to Cartesian}
+
+            \begin{itemize}
+                \item \( x = r\cos\theta \)
+                \item \( y = r\sin\theta \)
+                \item \( z = z \)
+            \end{itemize}
+
+            \vspace{0.5em}
+
+            \textbf{Cartesian to Cylindrical}
+
+            \begin{itemize}
+                \item \( r = \sqrt{x^2 + y^2} \)
+                \item \( \tan\theta = \frac{x}{y}  \rightarrow  \theta = \tan^{-1}\left(\frac{x}{y}\right) \)
+                \item \( z = z \)
+            \end{itemize}
+
+        \end{adjustwidth}
+
+
+        % Subsection Title: Spherical Coordinates
+        \subsection*{Spherical Coordinates}
+
+        \begin{adjustwidth}{2em}{0pt}
+
+            \begin{tcolorbox}[enhanced, colback=white, colframe=black, boxrule=0.5pt]
+
+                \textbf{Note:} \\
+                Spherical coordinates describe a point in 3D space using three values:
+                        
+                \begin{itemize}
+                    \item \( \rho \): the ditance from the origin
+                    \item \( \theta \): the angle from the positive x-axis in the xy-plane (same as polar coordiantes)
+                    \item \( \phi \): the angle from the postive z-axis down to the point
+                \end{itemize}
+
+                This system is useful for problems with radial symmetry, like spheres and cones.
+
+            \end{tcolorbox}
+
+            \vspace{0.5em}
+
+            % Conversions
+            \textbf{Spherical to Cartesian}
+
+                \begin{itemize}
+                    \item \( x = \rho\sin\phi\cos\theta \)
+                    \item \( y = \rho\sin\phi\sin\theta \)
+                    \item \( z = \rho\cos\phi \)
+                \end{itemize}
+
+                \vspace{0.5em}
+
+                \textbf{Cartesian to Spherical}
+
+                \begin{itemize}
+                    \item \( \rho = \sqrt{x^2 + y^2 + z^2} \)
+                    \item \( \tan\theta = \frac{x}{y}  \rightarrow  \theta = \tan^{-1}\left(\frac{x}{y}\right) \)
+                    \item \( \phi = \arccos\left(\frac{z}{\sqrt{x^2 + y^2 + z^2}}\right) \)
+                \end{itemize}
+
+        \end{adjustwidth}
+
+    \end{adjustwidth}
+
+\end{tcolorbox}
+
+\end{document}
