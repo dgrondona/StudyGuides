@@ -9,9 +9,37 @@
 \usepackage{amsmath, amssymb}
 \usepackage{changepage}
 \usepackage[most]{tcolorbox}
+\tcbuselibrary{breakable}
 
 % define colors
 \definecolor{darkgreen}{RGB}{0,100,0}
+
+% tcolorbox types
+\newtcolorbox{defaultbox}{
+    breakable,
+    enhanced,
+    colback=white,
+    colframe=black,
+    boxrule=0.5pt,
+    arc=2mm,
+    left=1em,
+    right=1em,
+    top=1em,
+    bottom=1em,
+    overlay first={\draw[line width=.5pt] (frame.south west)--(frame.south east);},
+    overlay middle={\draw[line width=.5pt] (frame.south west)--(frame.south east);\draw[line width=.5pt] (frame.north west)--(frame.north east);},
+    overlay last={\draw[line width=.5pt] (frame.north west)--(frame.north east);}
+}
+\newtcolorbox{notebox}{
+    enhanced,
+    colback=white,
+    colframe=black,
+    boxrule=0.5pt
+}
+\newtcolorbox{examplebox}{
+    enhanced,
+    boxrule=0.5pt
+}
 
 \begin{document}
 
@@ -25,20 +53,7 @@
 
 
 % Section 1 | Coordinate Systems
-\begin{tcolorbox}[breakable,
-    enhanced,
-    colback=white,
-    colframe=black,
-    boxrule=0.5pt,
-    arc=2mm,
-    left=1em,
-    right=1em,
-    top=1em,
-    bottom=1em,
-    overlay first={\draw[line width=.5pt] (frame.south west)--(frame.south east);},
-    overlay middle={\draw[line width=.5pt] (frame.south west)--(frame.south east);\draw[line width=.5pt] (frame.north west)--(frame.north east);},
-    overlay last={\draw[line width=.5pt] (frame.north west)--(frame.north east);}
-    ]
+\begin{defaultbox}
 
     % Section Title: Coordinate Systems
     \section*{Coordinate Systems}
@@ -51,7 +66,7 @@
 
         \begin{adjustwidth}{2em}{0pt}
 
-            \begin{tcolorbox}[enhanced, colback=white, colframe=black, boxrule=0.5pt]
+            \begin{notebox}
 
                 \textbf{Note:} \\
                 Polar coordinates describe a point in 2D space using two values:
@@ -63,7 +78,7 @@
 
                 This system is ideal for problems with circular or rotational symmetry, such as spirals or radial fields.
 
-            \end{tcolorbox}
+            \end{notebox}
 
 
             \vspace{0.5em}
@@ -88,7 +103,7 @@
             \vspace{0.5em}
 
 
-            \begin{tcolorbox}
+            \begin{examplebox}
 
                 \textbf{Example 1:} Convert the Cartesian point (3,3) into Polar coordiantes.
                 \vspace{0.5em}
@@ -118,7 +133,7 @@
 
                 \end{adjustwidth}
 
-            \end{tcolorbox}
+            \end{examplebox}
 
 
         \end{adjustwidth}
@@ -129,7 +144,7 @@
 
         \begin{adjustwidth}{2em}{0pt}
 
-            \begin{tcolorbox}[enhanced, colback=white, colframe=black, boxrule=0.5pt]
+            \begin{notebox}
 
                 \textbf{Note:} \\
                 Polar coordinates describe a point in 3D space using three values:
@@ -142,7 +157,7 @@
 
                 This system is useful for objects with circular symmetry around the z-axis, like cylinders and spirals.
 
-            \end{tcolorbox}
+            \end{notebox}
 
             \vspace{0.5em}
 
@@ -173,7 +188,7 @@
 
         \begin{adjustwidth}{2em}{0pt}
 
-            \begin{tcolorbox}[enhanced, colback=white, colframe=black, boxrule=0.5pt]
+            \begin{notebox}
 
                 \textbf{Note:} \\
                 Spherical coordinates describe a point in 3D space using three values:
@@ -186,7 +201,7 @@
 
                 This system is useful for problems with radial symmetry, like spheres and cones.
 
-            \end{tcolorbox}
+            \end{notebox}
 
             \vspace{0.5em}
 
@@ -213,6 +228,6 @@
 
     \end{adjustwidth}
 
-\end{tcolorbox}
+\end{defaultbox}
 
 \end{document}
