@@ -52,230 +52,413 @@
 \vspace{1em}
 
 
-% Section 1 | Coordinate Systems
-\begin{defaultbox}
 
-    % Section Title: Coordinate Systems
-    \section*{Coordinate Systems}
+% Section Title: Coordinate Systems
+\section*{Coordinate Systems}
 
+
+\begin{adjustwidth}{2em}{0pt}
+
+    % Subsection Title: Polar Coordinates
+    \subsection*{Polar Coordinates}
 
     \begin{adjustwidth}{2em}{0pt}
 
-        % Subsection Title: Polar Coordinates
-        \subsection*{Polar Coordinates}
+        \begin{notebox}
 
-        \begin{adjustwidth}{2em}{0pt}
-
-            \begin{notebox}
-
-                \textbf{Note:} \\
-                Polar coordinates describe a point in 2D space using two values:
-
-                \begin{itemize}
-                    \item \( r \): the distance from the origin
-                    \item \( \theta \): the angle from the positive x-axis
-                \end{itemize}
-
-                This system is ideal for problems with circular or rotational symmetry, such as spirals or radial fields.
-
-            \end{notebox}
-
-
-            \vspace{0.5em}
-
-            % Conversions
-            \textbf{Polar to Cartesian}
+            \textbf{Note:} \\
+            Polar coordinates describe a point in 2D space using two values:
 
             \begin{itemize}
-                \item \( x = r\cos\theta \)
-                \item \( y = r\sin\theta \)
+                \item \( r \): the distance from the origin
+                \item \( \theta \): the angle from the positive x-axis
+            \end{itemize}
+
+            This system is ideal for problems with circular or rotational symmetry, such as spirals or radial fields.
+
+        \end{notebox}
+
+
+        \vspace{0.5em}
+
+        % Conversions
+        \textbf{Polar to Cartesian}
+
+        \begin{itemize}
+            \item \( x = r\cos\theta \)
+            \item \( y = r\sin\theta \)
+        \end{itemize}
+
+        \vspace{0.5em}
+
+        \textbf{Cartesian to Polar}
+
+        \begin{itemize}
+            \item \( r = \sqrt{x^2 + y^2} \)
+            \item \( \tan\theta = \frac{x}{y}  \rightarrow  \theta = \tan^{-1}\left(\frac{x}{y}\right) \)
+        \end{itemize}
+
+        \vspace{0.5em}
+
+
+        \begin{examplebox}
+
+            \subsection*{Converting Coordinates}
+
+            \textbf{Example 1:} Convert the Cartesian point \( \left(3,3\right) \) into Polar coordiantes.
+            \vspace{0.5em}
+
+            \begin{adjustwidth}{2em}{0pt}
+
+                \( r = \sqrt{x^2 + y^2} = \sqrt{3^2 + 3^2} = \sqrt{18} = 3\sqrt{2} \)
+
+                \( \theta = \tan^{-1}\left(\frac{x}{y}\right) = \tan^{-1}\left(\frac{3}{3}\right) = \tan^{-1}(1) = \frac{\pi}{4} \)
+
+                \textbf{Answer:} \( \left(3\sqrt{2}, \frac{\pi}{4}\right) \)
+
+            \end{adjustwidth}
+
+            \vspace{1em}
+
+            \textbf{Example 2:} Convert the Polar point \( \left(2, \frac{\pi}{3}\right) \) to Cartesian coordiantes.
+            \vspace{0.5em}
+
+            \begin{adjustwidth}{2em}{0pt}
+
+                \( x = r\cos\theta = 2\cos\left(\frac{\pi}{3}\right) = 2 \cdot \frac{1}{2} = 1 \)
+
+                \( y = r\sin\theta = 2\sin\left(\frac{\pi}{3}\right) = 2 \cdot \frac{\sqrt{3}}{2} = \sqrt{3} \)
+
+                \textbf{Answer:} \( \left(1,\sqrt{3}\right) \)
+
+            \end{adjustwidth}
+
+        \end{examplebox}
+
+        \begin{examplebox}
+        
+            \subsection*{Converting Equations}
+
+            \textbf{Example 1:} Convert the equation \( r^2 = 4 \) and \( \theta = \frac{\pi}{4} \) to Cartesian coordiantes.
+            \vspace{0.5em}
+
+            \begin{adjustwidth}{2em}{0pt}
+
+                \textbf{Step 1:} Polar to Cartesian conversions:
+
+                \vspace{0.25em}
+
+                \( x = r\cos(\theta), y = r\sin(\theta) \)
+
+                \vspace{0.5em}
+
+                \textbf{Step 2:} Substitute the gien values into these formulas:
+
+                \vspace{0.25em}
+
+                \( x = 2\cos\left(\frac{\pi}{4}\right) = 2 \cdot \frac{\sqrt{2}}{2} = \sqrt{2} \)
+
+                \( y = 2\sin\left(\frac{\pi}{4}\right) = 2 \cdot \frac{\sqrt{2}}{2} = \sqrt{2} \)
+
+                \vspace{0.5em}
+
+                \textbf{Answer:}
+
+                \vspace{0.25em}
+
+                \( x = \sqrt{2}, y = \sqrt{2} \)
+
+                \vspace{0.5em}
+
+                So the equation in Cartesian coordinates would be:
+                \textcolor{darkgreen}{\( x^2 + y^2 = 4 \)}
+
+            \end{adjustwidth}
+            
+
+        \end{examplebox}
+
+
+    \end{adjustwidth}
+
+
+    % Subsection Title: Cylindrical Coordinates
+    \subsection*{Cylindrical Coordinates}
+
+    \begin{adjustwidth}{2em}{0pt}
+
+        \begin{notebox}
+
+            \textbf{Note:} \\
+            Polar coordinates describe a point in 3D space using three values:
+
+            \begin{itemize}
+                \item \( r \): The distance from the origin in the xy-plane
+                \item \( \theta \): The angle from the positive x-axis in the xy-plane (same as polar coordiantes)
+                \item \( z \): The height above (or below) the xy-plane
+            \end{itemize}
+
+            This system is useful for objects with circular symmetry around the z-axis, like cylinders and spirals.
+
+        \end{notebox}
+
+        \vspace{0.5em}
+
+        % Conversions
+        \textbf{Cylindrical to Cartesian}
+
+        \begin{itemize}
+            \item \( x = r\cos\theta \)
+            \item \( y = r\sin\theta \)
+            \item \( z = z \)
+        \end{itemize}
+
+        \vspace{0.5em}
+
+        \textbf{Cartesian to Cylindrical}
+
+        \begin{itemize}
+            \item \( r = \sqrt{x^2 + y^2} \)
+            \item \( \tan\theta = \frac{x}{y}  \rightarrow  \theta = \tan^{-1}\left(\frac{x}{y}\right) \)
+            \item \( z = z \)
+        \end{itemize}
+
+        \begin{examplebox}
+
+            \subsection*{Converting Coordinates}
+        
+            \textbf{Example 1:} Convert the Cartesian point \( \left(3,3,4\right) \) into Cylindrical coordiantes.
+            \vspace{0.5em}
+
+            \begin{adjustwidth}{2em}{0pt}
+
+                \( r = \sqrt{x^2 + y^2} = \sqrt{3^2 + 3^2} = \sqrt{18} = 3\sqrt{2} \)
+
+                \( \theta = \tan^{-1}\left(\frac{x}{y}\right) = \tan^{-1}\left(\frac{3}{3}\right) = \tan^{-1}(1) = \frac{\pi}{4} \)
+
+                \( z = 4 \)
+
+                \textbf{Answer:} \( \left(3\sqrt{2}, \frac{\pi}{4}, 4\right) \)
+
+            \end{adjustwidth}
+
+            \vspace{1em}
+
+            \textbf{Example 2:} Convert the Cylindrical point \( \left(2, \frac{\pi}{6}, 5\right) \) into Cartesian coordiantes.
+            \vspace{0.5em}
+
+            \begin{adjustwidth}{2em}{0pt}
+
+                \( x = r\cos\theta = 2\cos\left(\frac{\pi}{6}\right) = 2 \cdot \frac{\sqrt{3}}{2} = \sqrt{3} \)
+
+                \( y = r\sin\theta = 2\sin\left(\frac{\pi}{6}\right) = 2 \cdot \frac{1}{2} = 1 \)
+
+                \( z = 5 \)
+
+                \textbf{Answer:} \( \left(\sqrt{3}, 1, 5\right) \)
+
+            \end{adjustwidth}
+
+        \end{examplebox}
+
+        \begin{examplebox}
+        
+            \subsection*{Converting Equations}
+        
+            \textbf{Example 1:} Convert the equation \( r = 3 \) to Cartesian coordinates.
+            \vspace{0.5em}
+        
+            \begin{adjustwidth}{2em}{0pt}
+        
+                \textbf{Step 1:} Cylindrical to Cartesian conversion:
+        
+                \vspace{0.25em}
+        
+                \( r = \sqrt{x^2 + y^2} \)
+        
+                \vspace{0.5em}
+        
+                \textbf{Step 2:} Substitute the given value:
+        
+                \vspace{0.25em}
+        
+                \( \sqrt{x^2 + y^2} = 3 \Rightarrow x^2 + y^2 = 9 \)
+        
+                \vspace{0.5em}
+        
+                \textbf{Answer:}
+        
+                \vspace{0.25em}
+        
+                \textcolor{darkgreen}{\( x^2 + y^2 = 9 \)}
+        
+            \end{adjustwidth}
+
+            \textbf{Example 2:} Convert the equation \( r^2 + (z - 2)^2 = 4 \) to Cartesian coordinates.
+            \vspace{0.5em}
+        
+            \begin{adjustwidth}{2em}{0pt}
+        
+                \textbf{Step 1:} Use the cylindrical to Cartesian identity:
+        
+                \vspace{0.25em}
+        
+                \( r^2 = x^2 + y^2 \)
+        
+                \vspace{0.5em}
+        
+                \textbf{Step 2:} Substitute into the original equation:
+        
+                \vspace{0.25em}
+        
+                \( x^2 + y^2 + (z - 2)^2 = 4 \)
+        
+                \vspace{0.5em}
+        
+                \textbf{Answer:}
+        
+                \vspace{0.25em}
+        
+                \textcolor{darkgreen}{\( x^2 + y^2 + (z - 2)^2 = 4 \)}
+        
+            \end{adjustwidth}
+
+            \textbf{Example 3:} Convert the cylindrical equation \( r^2 + (z - 2)^2 = 4 \) into spherical coordinates.
+            \vspace{0.5em}
+
+            \begin{adjustwidth}{2em}{0pt}
+            
+                \textbf{Step 1:} Recall the cylindrical-to-spherical conversions:
+                \vspace{0.25em}
+            
+                \[
+                r = \rho\sin\phi, \quad z = \rho\cos\phi
+                \]
+            
+                \vspace{0.5em}
+            
+                \textbf{Step 2:} Substitute into the equation:
+                \vspace{0.25em}
+            
+                \[
+                (\rho\sin\phi)^2 + (\rho\cos\phi - 2)^2 = 4
+                \]
+            
+                \vspace{0.5em}
+            
+                \textbf{Step 3:} Simplify the expression:
+                \vspace{0.25em}
+            
+                \[
+                \rho^2\sin^2\phi + (\rho\cos\phi - 2)^2 = 4
+                \]
+            
+                \vspace{0.5em}
+            
+                \textbf{Answer:}
+                \vspace{0.25em}
+            
+                The equation in spherical coordinates is:  
+                \textcolor{darkgreen}{\( \rho^2\sin^2\phi + (\rho\cos\phi - 2)^2 = 4 \)}
+            
+            \end{adjustwidth}
+        
+        \end{examplebox}
+
+    \end{adjustwidth}
+
+
+    % Subsection Title: Spherical Coordinates
+    \subsection*{Spherical Coordinates}
+
+    \begin{adjustwidth}{2em}{0pt}
+
+        \begin{notebox}
+
+            \textbf{Note:} \\
+            Spherical coordinates describe a point in 3D space using three values:
+                    
+            \begin{itemize}
+                \item \( \rho \): the ditance from the origin
+                \item \( \theta \): the angle from the positive x-axis in the xy-plane (same as polar coordiantes)
+                \item \( \phi \): the angle from the postive z-axis down to the point
+            \end{itemize}
+
+            This system is useful for problems with radial symmetry, like spheres and cones.
+
+        \end{notebox}
+
+        \vspace{0.5em}
+
+        % Conversions
+        \textbf{Spherical to Cartesian}
+
+            \begin{itemize}
+                \item \( x = \rho\sin\phi\cos\theta \)
+                \item \( y = \rho\sin\phi\sin\theta \)
+                \item \( z = \rho\cos\phi \)
             \end{itemize}
 
             \vspace{0.5em}
 
-            \textbf{Cartesian to Polar}
+            \textbf{Cartesian to Spherical}
 
             \begin{itemize}
-                \item \( r = \sqrt{x^2 + y^2} \)
+                \item \( \rho = \sqrt{x^2 + y^2 + z^2} \)
                 \item \( \tan\theta = \frac{x}{y}  \rightarrow  \theta = \tan^{-1}\left(\frac{x}{y}\right) \)
+                \item \( \phi = \arccos\left(\frac{z}{\sqrt{x^2 + y^2 + z^2}}\right) \)
             \end{itemize}
-
-            \vspace{0.5em}
-
 
             \begin{examplebox}
-
-                \subsection*{Converting Coordinates}
-
-                \textbf{Example 1:} Convert the Cartesian point \( \left(3,3\right) \) into Polar coordiantes.
+        
+                \textbf{Example 1:} Convert the Cartesian point \( \left(2,2,1\right) \) into Spherical coordiantes.
                 \vspace{0.5em}
 
                 \begin{adjustwidth}{2em}{0pt}
 
-                    \( r = \sqrt{x^2 + y^2} = \sqrt{3^2 + 3^2} = \sqrt{18} = 3\sqrt{2} \)
+                    \( \rho = \sqrt{x^2 + y^2 + z^2} = \sqrt{2^2 + 2^2 + 1^2} = \sqrt{9} = 3 \)
 
-                    \( \theta = \tan^{-1}\left(\frac{x}{y}\right) = \tan^{-1}\left(\frac{3}{3}\right) = \tan^{-1}(1) = \frac{\pi}{4} \)
+                    \( \theta = \tan^{-1}\left(\frac{x}{y}\right) = \tan^{-1}\left(\frac{2}{2}\right) = \tan^{-1}(1) = \frac{\pi}{4} \)
 
-                    \textbf{Answer:} \( \left(3\sqrt{2}, \frac{\pi}{4}\right) \)
+                    \( \phi = \arccos\left(\frac{z}{\rho}\right) = arccos\left(\frac{1}{3}\right) \)
+
+                    \textbf{Answer:} \( \left(3, \frac{\pi}{4}, \arccos\left(\frac{1}{3}\right)\right) \)
 
                 \end{adjustwidth}
 
                 \vspace{1em}
 
-                \textbf{Example 2:} Convert the Polar point \( \left(2, \frac{\pi}{3}\right) \) to Cartesian coordiantes.
+                \textbf{Example 2:} Convert the Spherical point \( \left(4, \frac{\pi}{3}, \frac{\pi}{4}\right) \)
                 \vspace{0.5em}
 
                 \begin{adjustwidth}{2em}{0pt}
 
-                    \( x = r\cos\theta = 2\cos\left(\frac{\pi}{3}\right) = 2 \cdot \frac{1}{2} = 1 \)
+                    \( x = \rho\sin\phi\cos\theta = 4 \cdot \sin\left(\frac{\pi}{4}\right) \cdot \cos\left(\frac{\pi}{3}\right) = 4 \cdot \frac{\sqrt{2}}{2} \cdot \frac{1}{2} = \sqrt{2} \)
 
-                    \( y = r\sin\theta = 2\sin\left(\frac{\pi}{3}\right) = 2 \cdot \frac{\sqrt{3}}{2} = \sqrt{3} \)
+                    \( y = \rho\sin\phi\sin\theta = 4 \cdot \sin\left(\frac{\pi}{4}\right) \cdot \sin\left(\frac{\pi}{3}\right) = 4 \cdot \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2} = \sqrt{6} \)
 
-                    \textbf{Answer:} \( \left(1,\sqrt{3}\right) \)
+                    \( z = \rho\cos\phi = 4 \cdot \cos\left(\frac{\pi}{4}\right) = 4 \cdot \frac{\sqrt{2}}{2} = 2\sqrt{2} \)
+
+                    \textbf{Answer:} \( \left(\sqrt{2}, \sqrt{6}, 2\sqrt{2}\right) \)
 
                 \end{adjustwidth}
 
             \end{examplebox}
 
             \begin{examplebox}
-            
-                \subsection*{Converting Equations}
-
-                \textbf{Example 1:} Convert the equation \( r^2 = 4 \) and \( \theta = \frac{\pi}{4} \) to Cartesian coordiantes.
-                \vspace{0.5em}
-
-                \begin{adjustwidth}{2em}{0pt}
-
-                    \textbf{Step 1:} Polar to Cartesian conversions:
-
-                    \vspace{0.25em}
-
-                    \( x = r\cos(\theta), y = r\sin(\theta) \)
-
-                    \vspace{0.5em}
-
-                    \textbf{Step 2:} Substitute the gien values into these formulas:
-
-                    \vspace{0.25em}
-
-                    \( x = 2\cos\left(\frac{\pi}{4}\right) = 2 \cdot \frac{\sqrt{2}}{2} = \sqrt{2} \)
-
-                    \( y = 2\sin\left(\frac{\pi}{4}\right) = 2 \cdot \frac{\sqrt{2}}{2} = \sqrt{2} \)
-
-                    \vspace{0.5em}
-
-                    \textbf{Answer:}
-
-                    \vspace{0.25em}
-
-                    \( x = \sqrt{2}, y = \sqrt{2} \)
-
-                    \vspace{0.5em}
-
-                    So the equation in Cartesian coordinates would be:
-                    \textcolor{darkgreen}{\( x^2 + y^2 = 4 \)}
-
-                \end{adjustwidth}
-
-            \end{examplebox}
-
-
-        \end{adjustwidth}
-
-
-        % Subsection Title: Cylindrical Coordinates
-        \subsection*{Cylindrical Coordinates}
-
-        \begin{adjustwidth}{2em}{0pt}
-
-            \begin{notebox}
-
-                \textbf{Note:} \\
-                Polar coordinates describe a point in 3D space using three values:
-
-                \begin{itemize}
-                    \item \( r \): The distance from the origin in the xy-plane
-                    \item \( \theta \): The angle from the positive x-axis in the xy-plane (same as polar coordiantes)
-                    \item \( z \): The height above (or below) the xy-plane
-                \end{itemize}
-
-                This system is useful for objects with circular symmetry around the z-axis, like cylinders and spirals.
-
-            \end{notebox}
-
-            \vspace{0.5em}
-
-            % Conversions
-            \textbf{Cylindrical to Cartesian}
-
-            \begin{itemize}
-                \item \( x = r\cos\theta \)
-                \item \( y = r\sin\theta \)
-                \item \( z = z \)
-            \end{itemize}
-
-            \vspace{0.5em}
-
-            \textbf{Cartesian to Cylindrical}
-
-            \begin{itemize}
-                \item \( r = \sqrt{x^2 + y^2} \)
-                \item \( \tan\theta = \frac{x}{y}  \rightarrow  \theta = \tan^{-1}\left(\frac{x}{y}\right) \)
-                \item \( z = z \)
-            \end{itemize}
-
-            \begin{examplebox}
-
-                \subsection*{Converting Coordinates}
-            
-                \textbf{Example 1:} Convert the Cartesian point \( \left(3,3,4\right) \) into Cylindrical coordiantes.
-                \vspace{0.5em}
-
-                \begin{adjustwidth}{2em}{0pt}
-
-                    \( r = \sqrt{x^2 + y^2} = \sqrt{3^2 + 3^2} = \sqrt{18} = 3\sqrt{2} \)
-
-                    \( \theta = \tan^{-1}\left(\frac{x}{y}\right) = \tan^{-1}\left(\frac{3}{3}\right) = \tan^{-1}(1) = \frac{\pi}{4} \)
-
-                    \( z = 4 \)
-
-                    \textbf{Answer:} \( \left(3\sqrt{2}, \frac{\pi}{4}, 4\right) \)
-
-                \end{adjustwidth}
-
-                \vspace{1em}
-
-                \textbf{Example 2:} Convert the Cylindrical point \( \left(2, \frac{\pi}{6}, 5\right) \) into Cartesian coordiantes.
-                \vspace{0.5em}
-
-                \begin{adjustwidth}{2em}{0pt}
-
-                    \( x = r\cos\theta = 2\cos\left(\frac{\pi}{6}\right) = 2 \cdot \frac{\sqrt{3}}{2} = \sqrt{3} \)
-
-                    \( y = r\sin\theta = 2\sin\left(\frac{\pi}{6}\right) = 2 \cdot \frac{1}{2} = 1 \)
-
-                    \( z = 5 \)
-
-                    \textbf{Answer:} \( \left(\sqrt{3}, 1, 5\right) \)
-
-                \end{adjustwidth}
-
-            \end{examplebox}
-
-            \begin{examplebox}
-            
+        
                 \subsection*{Converting Equations}
             
-                \textbf{Example 1:} Convert the equation \( r = 3 \) to Cartesian coordinates.
+                \textbf{Example 1:} Convert the equation \( \rho = 5 \) (spherical) to Cartesian coordinates.
                 \vspace{0.5em}
             
                 \begin{adjustwidth}{2em}{0pt}
             
-                    \textbf{Step 1:} Cylindrical to Cartesian conversion:
+                    \textbf{Step 1:} Spherical to Cartesian conversion:
             
                     \vspace{0.25em}
             
-                    \( r = \sqrt{x^2 + y^2} \)
+                    \( \rho = \sqrt{x^2 + y^2 + z^2} \)
             
                     \vspace{0.5em}
             
@@ -283,7 +466,7 @@
             
                     \vspace{0.25em}
             
-                    \( \sqrt{x^2 + y^2} = 3 \Rightarrow x^2 + y^2 = 9 \)
+                    \( \sqrt{x^2 + y^2 + z^2} = 5 \Rightarrow x^2 + y^2 + z^2 = 25 \)
             
                     \vspace{0.5em}
             
@@ -291,131 +474,14 @@
             
                     \vspace{0.25em}
             
-                    \textcolor{darkgreen}{\( x^2 + y^2 = 9 \)}
+                    \textcolor{darkgreen}{\( x^2 + y^2 + z^2 = 25 \)}
             
                 \end{adjustwidth}
             
             \end{examplebox}
 
-        \end{adjustwidth}
-
-
-        % Subsection Title: Spherical Coordinates
-        \subsection*{Spherical Coordinates}
-
-        \begin{adjustwidth}{2em}{0pt}
-
-            \begin{notebox}
-
-                \textbf{Note:} \\
-                Spherical coordinates describe a point in 3D space using three values:
-                        
-                \begin{itemize}
-                    \item \( \rho \): the ditance from the origin
-                    \item \( \theta \): the angle from the positive x-axis in the xy-plane (same as polar coordiantes)
-                    \item \( \phi \): the angle from the postive z-axis down to the point
-                \end{itemize}
-
-                This system is useful for problems with radial symmetry, like spheres and cones.
-
-            \end{notebox}
-
-            \vspace{0.5em}
-
-            % Conversions
-            \textbf{Spherical to Cartesian}
-
-                \begin{itemize}
-                    \item \( x = \rho\sin\phi\cos\theta \)
-                    \item \( y = \rho\sin\phi\sin\theta \)
-                    \item \( z = \rho\cos\phi \)
-                \end{itemize}
-
-                \vspace{0.5em}
-
-                \textbf{Cartesian to Spherical}
-
-                \begin{itemize}
-                    \item \( \rho = \sqrt{x^2 + y^2 + z^2} \)
-                    \item \( \tan\theta = \frac{x}{y}  \rightarrow  \theta = \tan^{-1}\left(\frac{x}{y}\right) \)
-                    \item \( \phi = \arccos\left(\frac{z}{\sqrt{x^2 + y^2 + z^2}}\right) \)
-                \end{itemize}
-
-                \begin{examplebox}
-            
-                    \textbf{Example 1:} Convert the Cartesian point \( \left(2,2,1\right) \) into Spherical coordiantes.
-                    \vspace{0.5em}
-    
-                    \begin{adjustwidth}{2em}{0pt}
-    
-                        \( \rho = \sqrt{x^2 + y^2 + z^2} = \sqrt{2^2 + 2^2 + 1^2} = \sqrt{9} = 3 \)
-    
-                        \( \theta = \tan^{-1}\left(\frac{x}{y}\right) = \tan^{-1}\left(\frac{2}{2}\right) = \tan^{-1}(1) = \frac{\pi}{4} \)
-    
-                        \( \phi = \arccos\left(\frac{z}{\rho}\right) = arccos\left(\frac{1}{3}\right) \)
-    
-                        \textbf{Answer:} \( \left(3, \frac{\pi}{4}, \arccos\left(\frac{1}{3}\right)\right) \)
-    
-                    \end{adjustwidth}
-    
-                    \vspace{1em}
-    
-                    \textbf{Example 2:} Convert the Spherical point \( \left(4, \frac{\pi}{3}, \frac{\pi}{4}\right) \)
-                    \vspace{0.5em}
-    
-                    \begin{adjustwidth}{2em}{0pt}
-    
-                        \( x = \rho\sin\phi\cos\theta = 4 \cdot \sin\left(\frac{\pi}{4}\right) \cdot \cos\left(\frac{\pi}{3}\right) = 4 \cdot \frac{\sqrt{2}}{2} \cdot \frac{1}{2} = \sqrt{2} \)
-    
-                        \( y = \rho\sin\phi\sin\theta = 4 \cdot \sin\left(\frac{\pi}{4}\right) \cdot \sin\left(\frac{\pi}{3}\right) = 4 \cdot \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2} = \sqrt{6} \)
-    
-                        \( z = \rho\cos\phi = 4 \cdot \cos\left(\frac{\pi}{4}\right) = 4 \cdot \frac{\sqrt{2}}{2} = 2\sqrt{2} \)
-    
-                        \textbf{Answer:} \( \left(\sqrt{2}, \sqrt{6}, 2\sqrt{2}\right) \)
-    
-                    \end{adjustwidth}
-    
-                \end{examplebox}
-
-                \begin{examplebox}
-            
-                    \subsection*{Converting Equations}
-                
-                    \textbf{Example 1:} Convert the equation \( \rho = 5 \) to Cartesian coordinates.
-                    \vspace{0.5em}
-                
-                    \begin{adjustwidth}{2em}{0pt}
-                
-                        \textbf{Step 1:} Spherical to Cartesian conversion:
-                
-                        \vspace{0.25em}
-                
-                        \( \rho = \sqrt{x^2 + y^2 + z^2} \)
-                
-                        \vspace{0.5em}
-                
-                        \textbf{Step 2:} Substitute the given value:
-                
-                        \vspace{0.25em}
-                
-                        \( \sqrt{x^2 + y^2 + z^2} = 5 \Rightarrow x^2 + y^2 + z^2 = 25 \)
-                
-                        \vspace{0.5em}
-                
-                        \textbf{Answer:}
-                
-                        \vspace{0.25em}
-                
-                        \textcolor{darkgreen}{\( x^2 + y^2 + z^2 = 25 \)}
-                
-                    \end{adjustwidth}
-                
-                \end{examplebox}
-
-        \end{adjustwidth}
-
     \end{adjustwidth}
 
-\end{defaultbox}
+\end{adjustwidth}
 
 \end{document}
