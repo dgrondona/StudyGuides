@@ -37,6 +37,7 @@
     boxrule=0.5pt
 }
 \newtcolorbox{examplebox}{
+    breakable,
     enhanced,
     boxrule=0.5pt
 }
@@ -110,11 +111,11 @@
 
             \begin{adjustwidth}{2em}{0pt}
 
-                \( r = \sqrt{x^2 + y^2} = \sqrt{3^2 + 3^2} = \sqrt{18} = 3\sqrt{2} \)
+                \[ r = \sqrt{x^2 + y^2} = \sqrt{3^2 + 3^2} = \sqrt{18} = 3\sqrt{2} \]
 
-                \( \theta = \tan^{-1}\left(\frac{x}{y}\right) = \tan^{-1}\left(\frac{3}{3}\right) = \tan^{-1}(1) = \frac{\pi}{4} \)
+                \[ \theta = \tan^{-1}\left(\frac{x}{y}\right) = \tan^{-1}\left(\frac{3}{3}\right) = \tan^{-1}(1) = \frac{\pi}{4} \]
 
-                \textbf{Answer:} \( \left(3\sqrt{2}, \frac{\pi}{4}\right) \)
+                \textbf{Answer:} \textcolor{darkgreen}{\( \left(3\sqrt{2}, \frac{\pi}{4}\right) \)}
 
             \end{adjustwidth}
 
@@ -125,15 +126,17 @@
 
             \begin{adjustwidth}{2em}{0pt}
 
-                \( x = r\cos\theta = 2\cos\left(\frac{\pi}{3}\right) = 2 \cdot \frac{1}{2} = 1 \)
+                \[ x = r\cos\theta = 2\cos\left(\frac{\pi}{3}\right) = 2 \cdot \frac{1}{2} = 1 \]
 
-                \( y = r\sin\theta = 2\sin\left(\frac{\pi}{3}\right) = 2 \cdot \frac{\sqrt{3}}{2} = \sqrt{3} \)
+                \[ y = r\sin\theta = 2\sin\left(\frac{\pi}{3}\right) = 2 \cdot \frac{\sqrt{3}}{2} = \sqrt{3} \]
 
-                \textbf{Answer:} \( \left(1,\sqrt{3}\right) \)
+                \textbf{Answer:} \textcolor{darkgreen}{\( \left(1,\sqrt{3}\right) \)}
 
             \end{adjustwidth}
 
         \end{examplebox}
+
+        \break
 
         \begin{examplebox}
         
@@ -148,7 +151,7 @@
 
                 \vspace{0.25em}
 
-                \( x = r\cos(\theta), y = r\sin(\theta) \)
+                \[ x = r\cos(\theta), y = r\sin(\theta) \]
 
                 \vspace{0.5em}
 
@@ -156,9 +159,9 @@
 
                 \vspace{0.25em}
 
-                \( x = 2\cos\left(\frac{\pi}{4}\right) = 2 \cdot \frac{\sqrt{2}}{2} = \sqrt{2} \)
+                \[ x = 2\cos\left(\frac{\pi}{4}\right) = 2 \cdot \frac{\sqrt{2}}{2} = \sqrt{2} \]
 
-                \( y = 2\sin\left(\frac{\pi}{4}\right) = 2 \cdot \frac{\sqrt{2}}{2} = \sqrt{2} \)
+                \[ y = 2\sin\left(\frac{\pi}{4}\right) = 2 \cdot \frac{\sqrt{2}}{2} = \sqrt{2} \]
 
                 \vspace{0.5em}
 
@@ -166,7 +169,7 @@
 
                 \vspace{0.25em}
 
-                \( x = \sqrt{2}, y = \sqrt{2} \)
+                \[ x = \sqrt{2}, y = \sqrt{2} \]
 
                 \vspace{0.5em}
 
@@ -223,6 +226,8 @@
             \item \( z = z \)
         \end{itemize}
 
+        \break
+
         \begin{examplebox}
 
             \subsection*{Converting Coordinates}
@@ -232,13 +237,13 @@
 
             \begin{adjustwidth}{2em}{0pt}
 
-                \( r = \sqrt{x^2 + y^2} = \sqrt{3^2 + 3^2} = \sqrt{18} = 3\sqrt{2} \)
+                \[ r = \sqrt{x^2 + y^2} = \sqrt{3^2 + 3^2} = \sqrt{18} = 3\sqrt{2} \]
 
-                \( \theta = \tan^{-1}\left(\frac{x}{y}\right) = \tan^{-1}\left(\frac{3}{3}\right) = \tan^{-1}(1) = \frac{\pi}{4} \)
+                \[ \theta = \tan^{-1}\left(\frac{x}{y}\right) = \tan^{-1}\left(\frac{3}{3}\right) = \tan^{-1}(1) = \frac{\pi}{4} \]
 
-                \( z = 4 \)
+                \[ z = 4 \]
 
-                \textbf{Answer:} \( \left(3\sqrt{2}, \frac{\pi}{4}, 4\right) \)
+                \textbf{Answer:} \textcolor{darkgreen}{\( \left(3\sqrt{2}, \frac{\pi}{4}, 4\right) \)}
 
             \end{adjustwidth}
 
@@ -249,13 +254,13 @@
 
             \begin{adjustwidth}{2em}{0pt}
 
-                \( x = r\cos\theta = 2\cos\left(\frac{\pi}{6}\right) = 2 \cdot \frac{\sqrt{3}}{2} = \sqrt{3} \)
+                \[ x = r\cos\theta = 2\cos\left(\frac{\pi}{6}\right) = 2 \cdot \frac{\sqrt{3}}{2} = \sqrt{3} \]
 
-                \( y = r\sin\theta = 2\sin\left(\frac{\pi}{6}\right) = 2 \cdot \frac{1}{2} = 1 \)
+                \[ y = r\sin\theta = 2\sin\left(\frac{\pi}{6}\right) = 2 \cdot \frac{1}{2} = 1 \]
 
-                \( z = 5 \)
+                \[ z = 5 \]
 
-                \textbf{Answer:} \( \left(\sqrt{3}, 1, 5\right) \)
+                \textbf{Answer:} \textcolor{darkgreen}{\( \left(\sqrt{3}, 1, 5\right) \)}
 
             \end{adjustwidth}
 
@@ -274,7 +279,7 @@
         
                 \vspace{0.25em}
         
-                \( r = \sqrt{x^2 + y^2} \)
+                \[ r = \sqrt{x^2 + y^2} \]
         
                 \vspace{0.5em}
         
@@ -282,7 +287,7 @@
         
                 \vspace{0.25em}
         
-                \( \sqrt{x^2 + y^2} = 3 \Rightarrow x^2 + y^2 = 9 \)
+                \[ \sqrt{x^2 + y^2} = 3 \Rightarrow x^2 + y^2 = 9 \]
         
                 \vspace{0.5em}
         
@@ -303,7 +308,7 @@
         
                 \vspace{0.25em}
         
-                \( r^2 = x^2 + y^2 \)
+                \[ r^2 = x^2 + y^2 \]
         
                 \vspace{0.5em}
         
@@ -311,7 +316,7 @@
         
                 \vspace{0.25em}
         
-                \( x^2 + y^2 + (z - 2)^2 = 4 \)
+                \[ x^2 + y^2 + (z - 2)^2 = 4 \]
         
                 \vspace{0.5em}
         
