@@ -39,7 +39,9 @@
 \newtcolorbox{examplebox}{
     breakable,
     enhanced,
-    boxrule=0.5pt
+    boxrule=0.5pt,
+    top=1em,
+    bottom=1em
 }
 
 \begin{document}
@@ -94,7 +96,7 @@
 
         \begin{itemize}
             \item \( r = \sqrt{x^2 + y^2} \)
-            \item \( \tan\theta = \frac{x}{y}  \rightarrow  \theta = \tan^{-1}\left(\frac{x}{y}\right) \)
+            \item \( \tan\theta = \frac{y}{x}  \rightarrow  \theta = \tan^{-1}\left(\frac{x}{y}\right) \)
         \end{itemize}
 
         \vspace{0.5em}
@@ -104,7 +106,7 @@
 
             \subsection*{Converting Coordinates}
 
-            \textbf{Example 1:} Convert the Cartesian point \( \left(3,3\right) \) into Polar coordiantes.
+            \textbf{Example 1:} Convert the Cartesian point \( \left(3,3\right) \) into Polar coordinates.
             \vspace{0.5em}
 
             \begin{adjustwidth}{2em}{0pt}
@@ -119,7 +121,7 @@
 
             \vspace{1em}
 
-            \textbf{Example 2:} Convert the Polar point \( \left(2, \frac{\pi}{3}\right) \) to Cartesian coordiantes.
+            \textbf{Example 2:} Convert the Polar point \( \left(2, \frac{\pi}{3}\right) \) to Cartesian coordinates.
             \vspace{0.5em}
 
             \begin{adjustwidth}{2em}{0pt}
@@ -140,7 +142,7 @@
         
             \subsection*{Converting Equations}
 
-            \textbf{Example 1:} Convert the equation \( r^2 = 4 \) and \( \theta = \frac{\pi}{4} \) to Cartesian coordiantes.
+            \textbf{Example 1:} Convert the equation \( r^2 = 4 \) and \( \theta = \frac{\pi}{4} \) to Cartesian coordinates.
             \vspace{0.5em}
 
             \begin{adjustwidth}{2em}{0pt}
@@ -195,7 +197,7 @@
 
             \begin{itemize}
                 \item \( r \): The distance from the origin in the xy-plane
-                \item \( \theta \): The angle from the positive x-axis in the xy-plane (same as polar coordiantes)
+                \item \( \theta \): The angle from the positive x-axis in the xy-plane (same as polar coordinates)
                 \item \( z \): The height above (or below) the xy-plane
             \end{itemize}
 
@@ -220,7 +222,7 @@
 
         \begin{itemize}
             \item \( r = \sqrt{x^2 + y^2} \)
-            \item \( \tan\theta = \frac{x}{y}  \rightarrow  \theta = \tan^{-1}\left(\frac{x}{y}\right) \)
+            \item \( \tan\theta = \frac{y}{x}  \rightarrow  \theta = \tan^{-1}\left(\frac{x}{y}\right) \)
             \item \( z = z \)
         \end{itemize}
 
@@ -230,7 +232,7 @@
 
             \subsection*{Converting Coordinates}
         
-            \textbf{Example 1:} Convert the Cartesian point \( \left(3,3,4\right) \) into Cylindrical coordiantes.
+            \textbf{Example 1:} Convert the Cartesian point \( \left(3,3,4\right) \) into Cylindrical coordinates.
             \vspace{0.5em}
 
             \begin{adjustwidth}{2em}{0pt}
@@ -247,7 +249,7 @@
 
             \vspace{1em}
 
-            \textbf{Example 2:} Convert the Cylindrical point \( \left(2, \frac{\pi}{6}, 5\right) \) into Cartesian coordiantes.
+            \textbf{Example 2:} Convert the Cylindrical point \( \left(2, \frac{\pi}{6}, 5\right) \) into Cartesian coordinates.
             \vspace{0.5em}
 
             \begin{adjustwidth}{2em}{0pt}
@@ -383,7 +385,7 @@
                     
             \begin{itemize}
                 \item \( \rho \): the ditance from the origin
-                \item \( \theta \): the angle from the positive x-axis in the xy-plane (same as polar coordiantes)
+                \item \( \theta \): the angle from the positive x-axis in the xy-plane (same as polar coordinates)
                 \item \( \phi \): the angle from the postive z-axis down to the point
             \end{itemize}
 
@@ -408,13 +410,13 @@
 
             \begin{itemize}
                 \item \( \rho = \sqrt{x^2 + y^2 + z^2} \)
-                \item \( \tan\theta = \frac{x}{y}  \rightarrow  \theta = \tan^{-1}\left(\frac{x}{y}\right) \)
+                \item \( \tan\theta = \frac{y}{x}  \rightarrow  \theta = \tan^{-1}\left(\frac{x}{y}\right) \)
                 \item \( \phi = \arccos\left(\frac{z}{\sqrt{x^2 + y^2 + z^2}}\right) \)
             \end{itemize}
 
             \begin{examplebox}
         
-                \textbf{Example 1:} Convert the Cartesian point \( \left(2,2,1\right) \) into Spherical coordiantes.
+                \textbf{Example 1:} Convert the Cartesian point \( \left(2,2,1\right) \) into Spherical coordinates.
                 \vspace{0.5em}
 
                 \begin{adjustwidth}{2em}{0pt}
@@ -423,7 +425,7 @@
 
                     \[ \theta = \tan^{-1}\left(\frac{x}{y}\right) = \tan^{-1}\left(\frac{2}{2}\right) = \tan^{-1}(1) = \frac{\pi}{4} \]
 
-                    \[ \phi = \arccos\left(\frac{z}{\rho}\right) = arccos\left(\frac{1}{3}\right) \]
+                    \[ \phi = \arccos\left(\frac{z}{\rho}\right) = \arccos\left(\frac{1}{3}\right) \]
 
                     \textbf{Answer:} \textcolor{darkgreen}{\( \left(3, \frac{\pi}{4}, \arccos\left(\frac{1}{3}\right)\right) \)}
 
@@ -555,6 +557,14 @@
             \end{examplebox}
 
     \end{adjustwidth}
+
+\end{adjustwidth}
+
+\section*{Tangent Planes}
+
+\begin{adjustwidth}{2em}{0pt}
+
+
 
 \end{adjustwidth}
 
