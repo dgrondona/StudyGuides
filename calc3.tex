@@ -50,9 +50,7 @@
     \vspace{0.5em}
 \end{center}
 
-\vspace{1em}
-
-
+%\vspace{1em}
 
 % Section Title: Coordinate Systems
 \section*{Coordinate Systems}
@@ -454,7 +452,7 @@
         
                 \subsection*{Converting Equations}
             
-                \textbf{Example 1:} Convert the equation \( \rho = 5 \) (spherical) to Cartesian coordinates.
+                \textbf{Example 1:} Convert the equation \( \rho = 5 \) to Cartesian coordinates.
                 \vspace{0.5em}
             
                 \begin{adjustwidth}{2em}{0pt}
@@ -481,6 +479,77 @@
             
                     \textcolor{darkgreen}{\( x^2 + y^2 + z^2 = 25 \)}
             
+                \end{adjustwidth}
+
+                \vspace{0.5em}
+
+                \textbf{Example 2:} Convert the spherical equation \( \rho = 2\sin\phi \) into both Cartesian and cylindrical coordinates.
+
+                \vspace{0.5em}
+
+                \begin{adjustwidth}{2em}{0pt}
+                
+                    \textbf{Step 1:} Use the identity for \( \rho \sin\phi = r \), where \( r = \sqrt{x^2 + y^2} \)
+                
+                    \vspace{0.25em}
+
+                    Multiply both sides by \( \sin\phi \):
+                
+                    \[
+                    \rho \sin\phi = 2\sin^2\phi
+                    \]
+                
+                    \vspace{0.5em}
+                
+                    \textbf{Step 2:} Use substitution \( \rho \sin\phi = r \Rightarrow r = 2\sin^2\phi \)
+                
+                    \vspace{0.25em}
+                
+                    Now convert \( \sin^2\phi \) in terms of \( z \) and \( \rho \) using:
+                    \[
+                    z = \rho \cos\phi \Rightarrow \cos\phi = \frac{z}{\rho}, \quad \sin^2\phi = 1 - \cos^2\phi = 1 - \frac{z^2}{\rho^2}
+                    \]
+                
+                    \vspace{0.5em}
+                
+                    \textbf{Step 3:} Substitute back:
+                    \[
+                    r = 2\left(1 - \frac{z^2}{\rho^2} \right)
+                    \quad \text{and since} \quad \rho^2 = r^2 + z^2
+                    \]
+
+                    \break
+                
+                    Substituting \( \rho^2 \) and simplifying:
+                    \[
+                    r = 2\left(1 - \frac{z^2}{r^2 + z^2} \right)
+                    = 2\left( \frac{r^2}{r^2 + z^2} \right)
+                    \]
+                
+                    \[
+                    \Rightarrow r(r^2 + z^2) = 2r^2
+                    \Rightarrow r z^2 = r^2
+                    \Rightarrow z^2 = r \quad \text{(in cylindrical)}
+                    \]
+                
+                    \vspace{0.5em}
+                
+                    \textbf{Answer (Cylindrical):} \textcolor{darkgreen}{\( z^2 = r \)}
+                
+                    \vspace{0.5em}
+                
+                    \textbf{Step 4:} Convert to Cartesian:
+                
+                    Use \( r^2 = x^2 + y^2 \)
+                
+                    \[
+                    z^2 = \sqrt{x^2 + y^2}
+                    \]
+                
+                    \vspace{0.5em}
+                
+                    \textbf{Answer (Cartesian):} \textcolor{darkgreen}{\( z^2 = \sqrt{x^2 + y^2} \)}
+                
                 \end{adjustwidth}
             
             \end{examplebox}
