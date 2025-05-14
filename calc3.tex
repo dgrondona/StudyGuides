@@ -105,7 +105,7 @@
 
             \begin{examplebox}
 
-                \textbf{Example 1:} Convert the Cartesian point (3,3) into Polar coordiantes.
+                \textbf{Example 1:} Convert the Cartesian point \( \left(3,3\right) \) into Polar coordiantes.
                 \vspace{0.5em}
 
                 \begin{adjustwidth}{2em}{0pt}
@@ -114,13 +114,13 @@
 
                     \( \theta = \tan^{-1}\left(\frac{x}{y}\right) = \tan^{-1}\left(\frac{3}{3}\right) = \tan^{-1}(1) = \frac{\pi}{4} \)
 
-                    \textbf{Answer:} (\( 3\sqrt{2}, \frac{\pi}{4} \))
+                    \textbf{Answer:} \( \left(3\sqrt{2}, \frac{\pi}{4}\right) \)
 
                 \end{adjustwidth}
 
                 \vspace{1em}
 
-                \textbf{Example 2:} Convert the Polar point (2,\( \frac{\pi}{3} \)) to Cartesian coordiantes.
+                \textbf{Example 2:} Convert the Polar point \( \left(2, \frac{\pi}{3}\right) \) to Cartesian coordiantes.
                 \vspace{0.5em}
 
                 \begin{adjustwidth}{2em}{0pt}
@@ -129,7 +129,7 @@
 
                     \( y = r\sin\theta = 2\sin\left(\frac{\pi}{3}\right) = 2 \cdot \frac{\sqrt{3}}{2} = \sqrt{3} \)
 
-                    \textbf{Answer:} (\( 1,\sqrt{3} \))
+                    \textbf{Answer:} \( \left(1,\sqrt{3}\right) \)
 
                 \end{adjustwidth}
 
@@ -180,6 +180,42 @@
                 \item \( z = z \)
             \end{itemize}
 
+            \begin{examplebox}
+            
+                \textbf{Example 1:} Convert the Cartesian point \( \left(3,3,4\right) \) into Cylindrical coordiantes.
+                \vspace{0.5em}
+
+                \begin{adjustwidth}{2em}{0pt}
+
+                    \( r = \sqrt{x^2 + y^2} = \sqrt{3^2 + 3^2} = \sqrt{18} = 3\sqrt{2} \)
+
+                    \( \theta = \tan^{-1}\left(\frac{x}{y}\right) = \tan^{-1}\left(\frac{3}{3}\right) = \tan^{-1}(1) = \frac{\pi}{4} \)
+
+                    \( z = 4 \)
+
+                    \textbf{Answer:} \( \left(3\sqrt{2}, \frac{\pi}{4}, 4\right) \)
+
+                \end{adjustwidth}
+
+                \vspace{1em}
+
+                \textbf{Example 2:} Convert the Cylindrical point \( \left(2, \frac{\pi}{6}, 5\right) \) into Cartesian coordiantes.
+                \vspace{0.5em}
+
+                \begin{adjustwidth}{2em}{0pt}
+
+                    \( x = r\cos\theta = 2\cos\left(\frac{\pi}{6}\right) = 2 \cdot \frac{\sqrt{3}}{2} = \sqrt{3} \)
+
+                    \( y = r\sin\theta = 2\sin\left(\frac{\pi}{6}\right) = 2 \cdot \frac{1}{2} = 1 \)
+
+                    \( z = 5 \)
+
+                    \textbf{Answer:} \( \left(\sqrt{3}, 1, 5\right) \)
+
+                \end{adjustwidth}
+
+            \end{examplebox}
+
         \end{adjustwidth}
 
 
@@ -223,6 +259,42 @@
                     \item \( \tan\theta = \frac{x}{y}  \rightarrow  \theta = \tan^{-1}\left(\frac{x}{y}\right) \)
                     \item \( \phi = \arccos\left(\frac{z}{\sqrt{x^2 + y^2 + z^2}}\right) \)
                 \end{itemize}
+
+                \begin{examplebox}
+            
+                    \textbf{Example 1:} Convert the Cartesian point \( \left(2,2,1\right) \) into Spherical coordiantes.
+                    \vspace{0.5em}
+    
+                    \begin{adjustwidth}{2em}{0pt}
+    
+                        \( \rho = \sqrt{x^2 + y^2 + z^2} = \sqrt{2^2 + 2^2 + 1^2} = \sqrt{9} = 3 \)
+    
+                        \( \theta = \tan^{-1}\left(\frac{x}{y}\right) = \tan^{-1}\left(\frac{2}{2}\right) = \tan^{-1}(1) = \frac{\pi}{4} \)
+    
+                        \( \phi = \arccos\left(\frac{z}{\rho}\right) = arccos\left(\frac{1}{3}\right) \)
+    
+                        \textbf{Answer:} \( \left(3, \frac{\pi}{4}, \arccos\left(\frac{1}{3}\right)\right) \)
+    
+                    \end{adjustwidth}
+    
+                    \vspace{1em}
+    
+                    \textbf{Example 2:} Convert the Spherical point \( \left(4, \frac{\pi}{3}, \frac{\pi}{4}\right) \)
+                    \vspace{0.5em}
+    
+                    \begin{adjustwidth}{2em}{0pt}
+    
+                        \( x = \rho\sin\phi\cos\theta = 4 \cdot \sin\left(\frac{\pi}{4}\right) \cdot \cos\left(\frac{\pi}{3}\right) = 4 \cdot \frac{\sqrt{2}}{2} \cdot \frac{1}{2} = \sqrt{2} \)
+    
+                        \( y = \rho\sin\phi\sin\theta = 4 \cdot \sin\left(\frac{\pi}{4}\right) \cdot \sin\left(\frac{\pi}{3}\right) = 4 \cdot \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2} = \sqrt{6} \)
+    
+                        \( z = \rho\cos\phi = 4 \cdot \cos\left(\frac{\pi}{4}\right) = 4 \cdot \frac{\sqrt{2}}{2} = 2\sqrt{2} \)
+    
+                        \textbf{Answer:} \( \left(\sqrt{2}, \sqrt{6}, 2\sqrt{2}\right) \)
+    
+                    \end{adjustwidth}
+    
+                \end{examplebox}
 
         \end{adjustwidth}
 
